@@ -16,6 +16,9 @@ public class MonsterCtrl : MonoBehaviour
 
 	private bool isDie = false;
 
+	public GameObject bloodEffect;
+	public GameObject bloodDecal;
+
 	void Start ()
 	{
 		monsterTr = this.gameObject.GetComponent<Transform> ();
@@ -79,8 +82,24 @@ public class MonsterCtrl : MonoBehaviour
 	{
 		if (coll.gameObject.tag == "BULLET")
 		{
+			CreateBloodEffect(coll.transform.position);
 			Destroy(coll.gameObject);
 			animator.SetTrigger("IsHit");
 		}
+	}
+
+	void CreateBloodEffect( Vector3 pos )
+	{
+		GameObject blood1 = (GameObject)Instantiate(bloodEffect, pos, Quaternion.identity );
+		Destroy(blood1, 2.0f);
+
+		Vector3 decalPos = monsterTr.position + (Vector3.up*0.05f);
+		Quaternion decalRot = Quaternion.Euler(90, 0, Random.Range(0,360));
+
+		GameObject blood2 = (GameObject)Instantiate(bloodDecal, decalPos, decalRot);
+		float scale = Random.Range(1.5f, 3.5f);
+		blood2.transform.localScale = Vector3.one*scale;
+
+		Destroy(blood2, 5.0f);
 	}
 }
