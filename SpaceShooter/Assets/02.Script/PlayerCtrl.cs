@@ -21,6 +21,11 @@ public class PlayerCtrl : MonoBehaviour
 	public Anim anim;
 	public Animation _animation;
 
+	public int hp = 100;
+	
+	public delegate void PlayerDieHandler();
+	public static event PlayerDieHandler OnPlayerDie;
+
 	void Start ()
 	{
 		tr = GetComponent<Transform> ();
@@ -39,7 +44,7 @@ public class PlayerCtrl : MonoBehaviour
 
 		tr.Translate (moveDir.normalized * moveSpeed * Time.deltaTime, Space.Self);
 
-		tr.Rotate(Vector3.up*Time.deltaTime*rotSpeed*Input.GetAxis("Mouse X"));
+		tr.Rotate(Vector3.up*Time.deltaTime*rotSpeed*Input.GetAxis("Mouse X")*2);
 
 		if (v >= 0.1f)
 		{
@@ -61,5 +66,31 @@ public class PlayerCtrl : MonoBehaviour
 		{
 			_animation.CrossFade (anim.idle.name, 0.3f);			
 		}
+	}
+
+	void OnTriggerEnter( Collider coll )
+	{
+		if( coll.gameObject.tag == "PUNCH" )
+		{
+			hp -= 10;
+			if( hp <= 0 )
+			{
+				PlayerDie();
+			}
+		}
+	}
+
+	void PlayerDie()
+	{
+		/*
+		GameObject[] monsters = GameObject.FindGameObjectsWithTag("MONSTER");
+
+		foreach( GameObject monster in monsters )
+		{
+			monster.SendMessage("OnPlayerDie", SendMessageOptions.DontRequireReceiver );
+		}
+		*/
+
+		OnPlayerDie();
 	}
 }

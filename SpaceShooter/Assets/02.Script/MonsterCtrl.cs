@@ -19,6 +19,8 @@ public class MonsterCtrl : MonoBehaviour
 	public GameObject bloodEffect;
 	public GameObject bloodDecal;
 
+	private int hp = 100;
+
 	void Start ()
 	{
 		monsterTr = this.gameObject.GetComponent<Transform> ();
@@ -29,6 +31,16 @@ public class MonsterCtrl : MonoBehaviour
 		//nvAgent.destination = playerTr.position;
 		StartCoroutine (this.CheckMonsterState ());
 		StartCoroutine (this.MonsterAction ());
+	}
+
+	void OnEnable()
+	{
+		PlayerCtrl.OnPlayerDie += this.OnPlayerDie;
+	}
+
+	void OnDisable()
+	{
+		PlayerCtrl.OnPlayerDie -= this.OnPlayerDie;
 	}
 
 	IEnumerator CheckMonsterState()
@@ -83,9 +95,36 @@ public class MonsterCtrl : MonoBehaviour
 		if (coll.gameObject.tag == "BULLET")
 		{
 			CreateBloodEffect(coll.transform.position);
+			hp -= coll.gameObject.GetComponent<BulletCtrl>().damage;
+			if( hp <= 0 )
+			{
+				MonsterDie();
+			}
 			Destroy(coll.gameObject);
 			animator.SetTrigger("IsHit");
 		}
+	}
+
+	void MonsterDie()
+	{
+		StopAllCoroutines();
+
+		isDie =  true;
+		monsterState = MonsterState.die;
+		nvAgent.Stop();
+		animator.SetTrigger("IsDie");
+
+		gameObject.GetComponentInChildren<CapsuleCollider>().enabled = false;
+
+		foreach( Collider coll in gameObject.GetComponentsInChildren<SphereCollider>() )
+		{
+			coll.enabled = false;
+		}
+	}
+
+	void OnTriggerEnter( Collider coll )
+	{
+		Debug.Log(coll.gameObject.tag);
 	}
 
 	void CreateBloodEffect( Vector3 pos )
@@ -101,5 +140,12 @@ public class MonsterCtrl : MonoBehaviour
 		blood2.transform.localScale = Vector3.one*scale;
 
 		Destroy(blood2, 5.0f);
+	}
+
+	void OnPlayerDie()
+	{
+		StopAllCoroutines();
+		nvAgent.Stop();
+		animator.SetTrigger("IsPlayerDie");
 	}
 }
