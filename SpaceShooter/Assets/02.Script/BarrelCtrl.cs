@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class BarrelCtrl : MonoBehaviour
-{
+{   
 	public GameObject expEffect;
 	public Texture[] textures;
 
