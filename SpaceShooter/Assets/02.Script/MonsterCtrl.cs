@@ -21,6 +21,8 @@ public class MonsterCtrl : MonoBehaviour
 
 	private int hp = 100;
 
+    private GameUI gameUI;
+
 	void Start ()
 	{
 		monsterTr = this.gameObject.GetComponent<Transform> ();
@@ -31,6 +33,8 @@ public class MonsterCtrl : MonoBehaviour
 		//nvAgent.destination = playerTr.position;
 		StartCoroutine (this.CheckMonsterState ());
 		StartCoroutine (this.MonsterAction ());
+
+        gameUI = GameObject.Find("GameUI").GetComponent<GameUI>();
 	}
 
 	void OnEnable()
@@ -120,6 +124,8 @@ public class MonsterCtrl : MonoBehaviour
 		{
 			coll.enabled = false;
 		}
+
+        gameUI.DispScore(50);
 	}
 
 	void OnTriggerEnter( Collider coll )

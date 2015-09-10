@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 [System.Serializable]
@@ -26,9 +27,13 @@ public class PlayerCtrl : MonoBehaviour
 	public delegate void PlayerDieHandler();
 	public static event PlayerDieHandler OnPlayerDie;
 
+    private int initHp;
+    public Image imgHpbar;
+
 	void Start ()
 	{
 		tr = GetComponent<Transform> ();
+        initHp = hp;
 
 		_animation = GetComponentInChildren<Animation> ();
 		_animation.clip = anim.idle;
@@ -73,6 +78,7 @@ public class PlayerCtrl : MonoBehaviour
 		if( coll.gameObject.tag == "PUNCH" )
 		{
 			hp -= 10;
+            imgHpbar.fillAmount = (float)hp / (float)initHp;
 			if( hp <= 0 )
 			{
 				PlayerDie();

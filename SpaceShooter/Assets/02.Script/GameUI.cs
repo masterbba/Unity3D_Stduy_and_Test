@@ -8,6 +8,7 @@ public class GameUI : MonoBehaviour
     private int totScore = 0;
 	void Start ()
     {
+        totScore = PlayerPrefs.GetInt("TOT_SCORE", 0);
         DispScore(0);
 	}
 
@@ -15,5 +16,6 @@ public class GameUI : MonoBehaviour
     {
         totScore += score;
         txtScore.text = "Score <color=#ff0000>" + totScore.ToString() + "</color>";
+        PlayerPrefs.SetInt("TOT_SCORE", totScore);
     }
 }
