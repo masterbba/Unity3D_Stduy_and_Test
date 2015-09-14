@@ -49,6 +49,7 @@
      <Compile Include="Assets\02.Script\BulletCtrl.cs" />
      <Compile Include="Assets\02.Script\FireCtrl.cs" />
      <Compile Include="Assets\02.Script\FollowCam.cs" />
+     <Compile Include="Assets\02.Script\GameMgr.cs" />
      <Compile Include="Assets\02.Script\GameUI.cs" />
      <Compile Include="Assets\02.Script\MonsterCtrl.cs" />
      <Compile Include="Assets\02.Script\MyGizmo.cs" />

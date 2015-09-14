@@ -29,7 +29,7 @@ public class PlayerCtrl : MonoBehaviour
 
     private int initHp;
     public Image imgHpbar;
-
+    
 	void Start ()
 	{
 		tr = GetComponent<Transform> ();
@@ -98,5 +98,6 @@ public class PlayerCtrl : MonoBehaviour
 		*/
 
 		OnPlayerDie();
+        GameMgr.instance.isGameOver = true;
 	}
 }
