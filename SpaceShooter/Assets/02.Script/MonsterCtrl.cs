@@ -23,7 +23,7 @@ public class MonsterCtrl : MonoBehaviour
 
     private GameUI gameUI;
 
-	void Start ()
+	void Awake()
 	{
 		monsterTr = this.gameObject.GetComponent<Transform> ();
 		playerTr = GameObject.FindWithTag ("Player").GetComponent<Transform> ();
@@ -31,16 +31,16 @@ public class MonsterCtrl : MonoBehaviour
 		animator = this.gameObject.GetComponent<Animator> ();
 
 		//nvAgent.destination = playerTr.position;
-		StartCoroutine (this.CheckMonsterState ());
-		StartCoroutine (this.MonsterAction ());
-
+		
         gameUI = GameObject.Find("GameUI").GetComponent<GameUI>();
 	}
 
 	void OnEnable()
 	{
 		PlayerCtrl.OnPlayerDie += this.OnPlayerDie;
-	}
+        StartCoroutine(this.CheckMonsterState());
+        StartCoroutine(this.MonsterAction());
+    }
 
 	void OnDisable()
 	{
@@ -128,9 +128,29 @@ public class MonsterCtrl : MonoBehaviour
 		}
 
         gameUI.DispScore(50);
+
+        StartCoroutine(this.PushObjectPool());
 	}
 
-	void OnTriggerEnter( Collider coll )
+    IEnumerator PushObjectPool()
+    {
+        yield return new WaitForSeconds(3.0f);
+
+        isDie = false;
+        hp = 100;
+        gameObject.tag = "MONSTER";
+        monsterState = MonsterState.idle;
+
+        gameObject.GetComponentInChildren<CapsuleCollider>().enabled = true;
+        
+        foreach( Collider coll in gameObject.GetComponentsInChildren<SphereCollider>())
+        {
+            coll.enabled = true;
+        }
+
+        gameObject.SetActive(false);
+    }
+    void OnTriggerEnter( Collider coll )
 	{
 		Debug.Log(coll.gameObject.tag);
 	}

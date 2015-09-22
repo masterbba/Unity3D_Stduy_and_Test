@@ -27,7 +27,8 @@ public class FireCtrl : MonoBehaviour
 	void Fire()
 	{
 		CreateBullet ();
-		source.PlayOneShot (fireSfx, 0.9f);
+        //source.PlayOneShot (fireSfx, 0.9f);
+        GameMgr.instance.PlaySfx(firePos.position, fireSfx);
 		StartCoroutine (this.ShowMuzzleFlash ());
 	}
 
