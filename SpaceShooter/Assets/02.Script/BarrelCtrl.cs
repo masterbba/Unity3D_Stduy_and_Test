@@ -46,4 +46,19 @@ public class BarrelCtrl : MonoBehaviour
 
 		Destroy (gameObject, 5.0f);
 	}
+
+    void OnDamage(object[] _params)
+    {
+        Vector3 firePos = (Vector3)_params[0];
+        Vector3 hitPos = (Vector3)_params[1];
+        Vector3 incomeVector = hitPos - firePos;
+
+        incomeVector = incomeVector.normalized;
+
+        GetComponent<Rigidbody>().AddForceAtPosition(incomeVector * 1000f, hitPos);
+        if(++hitCount>=0)
+        {
+            ExpBarrel();
+        }
+    }
 }
