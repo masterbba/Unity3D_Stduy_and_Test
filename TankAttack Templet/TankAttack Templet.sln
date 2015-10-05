@@ -5,6 +5,8 @@ Project("{523BFB7D-9222-F89E-D3B7-06599CBE698F}") = "TankAttack Templet", "Assem
 EndProject
 Project("{523BFB7D-9222-F89E-D3B7-06599CBE698F}") = "TankAttack Templet", "Assembly-CSharp.csproj", "{420E350D-ACF5-05E0-B1C9-27F5B4C9A991}"
 EndProject
+Project("{523BFB7D-9222-F89E-D3B7-06599CBE698F}") = "TankAttack Templet", "Assembly-CSharp-Editor.csproj", "{8CD2E787-E777-7E76-85F8-B8D52109C7F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{420E350D-ACF5-05E0-B1C9-27F5B4C9A991}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{420E350D-ACF5-05E0-B1C9-27F5B4C9A991}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{420E350D-ACF5-05E0-B1C9-27F5B4C9A991}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CD2E787-E777-7E76-85F8-B8D52109C7F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CD2E787-E777-7E76-85F8-B8D52109C7F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CD2E787-E777-7E76-85F8-B8D52109C7F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CD2E787-E777-7E76-85F8-B8D52109C7F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-													GlobalSection(MonoDevelopProperties) = preSolution
+																	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
