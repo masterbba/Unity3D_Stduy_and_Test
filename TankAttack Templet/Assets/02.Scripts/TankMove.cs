@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.Utility;
 
 public class TankMove : MonoBehaviour
 {
@@ -10,11 +11,20 @@ public class TankMove : MonoBehaviour
     private Transform tr;
     private float h, v;
 
+    private PhotonView pv = null;
+    public Transform camPivot;
+
     void Start()
     {
         rbody = GetComponent<Rigidbody>();
         tr = GetComponent<Transform>();
         rbody.centerOfMass = new Vector3(0.0f, -0.5f, 0.0f);
+
+        pv = GetComponent<PhotonView>();
+        if( pv.isMine )
+        {
+            Camera.main.GetComponent<SmoothFollow>().target = camPivot;
+        }
     }
 
     void Update()

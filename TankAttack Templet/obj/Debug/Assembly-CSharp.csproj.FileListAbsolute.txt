@@ -21,3 +21,6 @@ E:\Study\UnityStudy\TankAttack Templet\Temp\bin\Debug\UnityEngine.Networking.xml
 E:\Study\UnityStudy\TankAttack Templet\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 E:\Study\UnityStudy\TankAttack Templet\obj\Debug\Assembly-CSharp.dll
 E:\Study\UnityStudy\TankAttack Templet\obj\Debug\Assembly-CSharp.pdb
+E:\Study\UnityStudy\TankAttack Templet\Temp\bin\Debug\Photon3Unity3D.dll
+E:\Study\UnityStudy\TankAttack Templet\Temp\bin\Debug\websocket-sharp.dll
+E:\Study\UnityStudy\TankAttack Templet\Temp\bin\Debug\Photon3Unity3D.xml
