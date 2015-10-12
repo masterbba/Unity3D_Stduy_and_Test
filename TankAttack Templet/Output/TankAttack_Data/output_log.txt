@@ -2,9 +2,9 @@ Mono path[0] = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Ma
 Mono path[1] = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Mono'
 Mono config path = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Mono/etc'
 PlayerConnection initialized from E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55391
-Multi-casting "[IP] 192.168.0.13 [Port] 55391 [Flags] 2 [Guid] 2005246970 [EditorId] 1708099657 [Version] 1048832 [Id] WindowsPlayer(MasterBBA-PC) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.0.13:55391]
+PlayerConnection initialized network socket : 0.0.0.0 55371
+Multi-casting "[IP] 192.168.0.13 [Port] 55371 [Flags] 2 [Guid] 2486004412 [EditorId] 2761383876 [Version] 1048832 [Id] WindowsPlayer(MasterBBA-PC) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.0.13:55371]
 Initialize engine version: 5.2.0f3 (e7947df39b5c)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -29,7 +29,7 @@ Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Ph
 Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
 Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.131 seconds
+- Completed reload, in  0.136 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
@@ -45,8 +45,8 @@ PhotonInit:Awake() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\
 (Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs Line: 1309)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2728 -> priority: 1 
-  Thread -> id: 2514 -> priority: 1 
+  Thread -> id: 1c2c -> priority: 1 
+  Thread -> id: 22d8 -> priority: 1 
 Entered Lobby!
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)

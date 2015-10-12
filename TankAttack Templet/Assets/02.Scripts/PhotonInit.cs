@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PhotonInit : MonoBehaviour
 {
     public string version = "v1.0";
+    public InputField userID;
+
 	void Awake ()
     {
         PhotonNetwork.ConnectUsingSettings(version);
@@ -12,7 +15,19 @@ public class PhotonInit : MonoBehaviour
     void OnJoinedLobby()
     {
         Debug.Log("Entered Lobby!");
+        userID.text = GetSuerID();
         PhotonNetwork.JoinRandomRoom();
+    }
+
+    string GetSuerID()
+    {
+        string userId = PlayerPrefs.GetString("USER_ID");
+        if( string.IsNullOrEmpty(userId) )
+        {
+            userId = "USER_" + Random.Range(0, 999).ToString("000");
+        }
+
+        return userId;
     }
 
     void OnPhotonRandomJoinFailed()
@@ -31,15 +46,22 @@ public class PhotonInit : MonoBehaviour
     void OnJoinedRoom()
     {
         Debug.Log("Enter Room");
-        CreateTank();
+        //CreateTank();
     }
 
-    void CreateTank()
+    public void OnClickJoinRandomRoom()
+    {
+        PhotonNetwork.player.name = userID.text;
+        PlayerPrefs.SetString("USER_ID", userID.text);
+        PhotonNetwork.JoinRandomRoom();
+    }
+
+    /*void CreateTank()
     {
         float pos = Random.Range(-100.0f, 100.0f);
         PhotonNetwork.Instantiate("Tank", new Vector3(pos, 20.0f, pos), Quaternion.identity, 0);
         Debug.Log("CreateTank");
-    }
+    }*/
 
     void OnGUI()
     {
