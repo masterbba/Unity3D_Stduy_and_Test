@@ -16,7 +16,7 @@ public class PhotonInit : MonoBehaviour
     {
         Debug.Log("Entered Lobby!");
         userID.text = GetSuerID();
-        PhotonNetwork.JoinRandomRoom();
+        //PhotonNetwork.JoinRandomRoom();
     }
 
     string GetSuerID()
@@ -47,10 +47,19 @@ public class PhotonInit : MonoBehaviour
     {
         Debug.Log("Enter Room");
         //CreateTank();
+        StartCoroutine(this.LoadBattleField());
+    }
+
+    IEnumerator LoadBattleField()
+    {
+        PhotonNetwork.isMessageQueueRunning = false;
+        AsyncOperation ao = Application.LoadLevelAsync("scBattleField");
+        yield return ao;
     }
 
     public void OnClickJoinRandomRoom()
     {
+        Debug.Log("aaaaaaaaaaaaaaaaaaaaaa");
         PhotonNetwork.player.name = userID.text;
         PlayerPrefs.SetString("USER_ID", userID.text);
         PhotonNetwork.JoinRandomRoom();
