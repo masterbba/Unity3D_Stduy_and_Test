@@ -1,11 +1,11 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{523BFB7D-9222-F89E-D3B7-06599CBE698F}") = "TankAttack Templet", "Assembly-CSharp-firstpass.csproj", "{0F5E7038-5BA7-311D-340A-D888E06769C4}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankAttack Templet.CSharp.Plugins", "TankAttack Templet.CSharp.Plugins.csproj", "{36D42DBC-FD4D-730D-2D68-C26D8F33EE96}"
 EndProject
-Project("{523BFB7D-9222-F89E-D3B7-06599CBE698F}") = "TankAttack Templet", "Assembly-CSharp.csproj", "{420E350D-ACF5-05E0-B1C9-27F5B4C9A991}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankAttack Templet.CSharp", "TankAttack Templet.CSharp.csproj", "{2B8B8B1C-F951-A8D3-AF92-88BE867442B3}"
 EndProject
-Project("{523BFB7D-9222-F89E-D3B7-06599CBE698F}") = "TankAttack Templet", "Assembly-CSharp-Editor.csproj", "{8CD2E787-E777-7E76-85F8-B8D52109C7F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TankAttack Templet.CSharp.Editor", "TankAttack Templet.CSharp.Editor.csproj", "{DDD76CD3-1B62-7324-F1A8-BE0F68A41AFF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,40 +13,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0F5E7038-5BA7-311D-340A-D888E06769C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F5E7038-5BA7-311D-340A-D888E06769C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0F5E7038-5BA7-311D-340A-D888E06769C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F5E7038-5BA7-311D-340A-D888E06769C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{420E350D-ACF5-05E0-B1C9-27F5B4C9A991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{420E350D-ACF5-05E0-B1C9-27F5B4C9A991}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{420E350D-ACF5-05E0-B1C9-27F5B4C9A991}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{420E350D-ACF5-05E0-B1C9-27F5B4C9A991}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8CD2E787-E777-7E76-85F8-B8D52109C7F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8CD2E787-E777-7E76-85F8-B8D52109C7F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8CD2E787-E777-7E76-85F8-B8D52109C7F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8CD2E787-E777-7E76-85F8-B8D52109C7F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36D42DBC-FD4D-730D-2D68-C26D8F33EE96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36D42DBC-FD4D-730D-2D68-C26D8F33EE96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36D42DBC-FD4D-730D-2D68-C26D8F33EE96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36D42DBC-FD4D-730D-2D68-C26D8F33EE96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B8B8B1C-F951-A8D3-AF92-88BE867442B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8B8B1C-F951-A8D3-AF92-88BE867442B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8B8B1C-F951-A8D3-AF92-88BE867442B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8B8B1C-F951-A8D3-AF92-88BE867442B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDD76CD3-1B62-7324-F1A8-BE0F68A41AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDD76CD3-1B62-7324-F1A8-BE0F68A41AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDD76CD3-1B62-7324-F1A8-BE0F68A41AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDD76CD3-1B62-7324-F1A8-BE0F68A41AFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																													GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
-		Policies = $0
-		$0.TextStylePolicy = $1
-		$1.inheritsSet = null
-		$1.scope = text/x-csharp
-		$0.CSharpFormattingPolicy = $2
-		$2.inheritsSet = Mono
-		$2.inheritsScope = text/x-csharp
-		$2.scope = text/x-csharp
-		$0.TextStylePolicy = $3
-		$3.FileWidth = 120
-		$3.TabWidth = 4
-		$3.IndentWidth = 4
-		$3.EolMarker = Unix
-		$3.inheritsSet = Mono
-		$3.inheritsScope = text/plain
-		$3.scope = text/plain
-	EndGlobalSection
-
 EndGlobal

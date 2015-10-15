@@ -6,10 +6,12 @@ public class PhotonInit : MonoBehaviour
 {
     public string version = "v1.0";
     public InputField userID;
+    public InputField roomName;
 
 	void Awake ()
     {
         PhotonNetwork.ConnectUsingSettings(version);
+        roomName.text = "ROOM_" + Random.Range(0, 999).ToString("000");
 	}
 
     void OnJoinedLobby()
@@ -63,6 +65,30 @@ public class PhotonInit : MonoBehaviour
         PhotonNetwork.player.name = userID.text;
         PlayerPrefs.SetString("USER_ID", userID.text);
         PhotonNetwork.JoinRandomRoom();
+    }
+
+    public void OnClickCreateRoom()
+    {
+        string _roomName = roomName.text;
+        if( string.IsNullOrEmpty(roomName.text) )
+        {
+            _roomName = "ROOM_" + Random.Range(0, 999).ToString("000");
+        }
+
+        PhotonNetwork.player.name = userID.text;
+        PlayerPrefs.SetString("USER_ID", userID.text);
+
+        RoomOptions roomOption = new RoomOptions();
+        roomOption.isOpen = true;
+        roomOption.isVisible = true;
+        roomOption.maxPlayers = 20;
+
+        PhotonNetwork.CreateRoom(_roomName, roomOption, TypedLobby.Default);
+    }
+
+    void OnPhotonCreateRoomFailed(object[] codeAndMsg )
+    {
+        Debug.Log("Create Room Failed = " + codeAndMsg[1]);
     }
 
     /*void CreateTank()
