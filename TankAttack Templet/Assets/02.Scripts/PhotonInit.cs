@@ -7,11 +7,14 @@ public class PhotonInit : MonoBehaviour
     public string version = "v1.0";
     public InputField userID;
     public InputField roomName;
+    public GameObject scrollContents;
+    public GameObject roomItem;
 
 	void Awake ()
     {
         PhotonNetwork.ConnectUsingSettings(version);
         roomName.text = "ROOM_" + Random.Range(0, 999).ToString("000");
+        scrollContents.GetComponent<RectTransform>().pivot = new Vector2(0.0f, 1.0f);
 	}
 
     void OnJoinedLobby()
@@ -101,5 +104,32 @@ public class PhotonInit : MonoBehaviour
     void OnGUI()
     {
         GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
+    }
+
+    void OnReceivedRoomListUpdate()
+    {
+        foreach( GameObject obj in GameObject.FindGameObjectsWithTag("ROOM_ITEM") )
+        {
+            Destroy(obj);
+        }
+
+        int rowCount = 0;
+        scrollContents.GetComponent<RectTransform>().sizeDelta = Vector2.zero;
+
+        foreach( RoomInfo _room in PhotonNetwork.GetRoomList() )
+        {
+            Debug.Log(_room.name);
+            GameObject room = (GameObject)Instantiate(roomItem);
+            room.transform.SetParent(scrollContents.transform, false);
+
+            RoomData roomData = room.GetComponent<RoomData>();
+            roomData.roomName = _room.name;
+            roomData.connectPlayer = _room.playerCount;
+            roomData.maxPlayer = _room.maxPlayers;
+            roomData.DispRoomData();
+
+            scrollContents.GetComponent<GridLayoutGroup>().constraintCount = ++rowCount;
+            scrollContents.GetComponent<RectTransform>().sizeDelta += new Vector2(0, 35);
+        }
     }
 }
