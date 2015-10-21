@@ -1,0 +1,20 @@
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.dll
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\Mono.Cecil.dll
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\Photon3Unity3D.dll
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\UnityEditor.dll
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\UnityEngine.dll
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\UnityEngine.Networking.dll
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\websocket-sharp.dll
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\UnityEngine.xml
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\UnityEngine.Networking.xml
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\UnityEditor.xml
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\Mono.Cecil.xml
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_bin\Debug\Photon3Unity3D.xml
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_obj\Debug\TankAttack Templet.CSharp.Plugins.csprojResolveAssemblyReference.cache
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_obj\Debug\Assembly-CSharp-firstpass.dll
+E:\Study\UnityStudy\TankAttack Templet\Temp\UnityVS_obj\Debug\Assembly-CSharp-firstpass.pdb

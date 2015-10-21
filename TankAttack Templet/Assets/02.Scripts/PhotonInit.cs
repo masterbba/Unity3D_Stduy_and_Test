@@ -15,8 +15,8 @@ public class PhotonInit : MonoBehaviour
         PhotonNetwork.ConnectUsingSettings(version);
         roomName.text = "ROOM_" + Random.Range(0, 999).ToString("000");
         scrollContents.GetComponent<RectTransform>().pivot = new Vector2(0.0f, 1.0f);
-	}
-
+    }
+    
     void OnJoinedLobby()
     {
         Debug.Log("Entered Lobby!");
@@ -64,7 +64,6 @@ public class PhotonInit : MonoBehaviour
 
     public void OnClickJoinRandomRoom()
     {
-        Debug.Log("aaaaaaaaaaaaaaaaaaaaaa");
         PhotonNetwork.player.name = userID.text;
         PlayerPrefs.SetString("USER_ID", userID.text);
         PhotonNetwork.JoinRandomRoom();
@@ -127,9 +126,18 @@ public class PhotonInit : MonoBehaviour
             roomData.connectPlayer = _room.playerCount;
             roomData.maxPlayer = _room.maxPlayers;
             roomData.DispRoomData();
+            roomData.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate { OnClickRoomItem(roomData.roomName); } );
 
             scrollContents.GetComponent<GridLayoutGroup>().constraintCount = ++rowCount;
             scrollContents.GetComponent<RectTransform>().sizeDelta += new Vector2(0, 35);
         }
+    }
+
+    void OnClickRoomItem(string roomName)
+    {
+        PhotonNetwork.player.name = userID.text;
+        PlayerPrefs.SetString("USER_ID", userID.text);
+
+        PhotonNetwork.JoinRoom(roomName);
     }
 }
