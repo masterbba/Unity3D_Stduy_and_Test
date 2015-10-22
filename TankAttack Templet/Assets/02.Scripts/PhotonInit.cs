@@ -12,7 +12,11 @@ public class PhotonInit : MonoBehaviour
 
 	void Awake ()
     {
-        PhotonNetwork.ConnectUsingSettings(version);
+        if( !PhotonNetwork.connected )
+        {
+            PhotonNetwork.ConnectUsingSettings(version);
+        }
+        userID.text = GetUserID();
         roomName.text = "ROOM_" + Random.Range(0, 999).ToString("000");
         scrollContents.GetComponent<RectTransform>().pivot = new Vector2(0.0f, 1.0f);
     }
@@ -20,11 +24,11 @@ public class PhotonInit : MonoBehaviour
     void OnJoinedLobby()
     {
         Debug.Log("Entered Lobby!");
-        userID.text = GetSuerID();
+        userID.text = GetUserID();
         //PhotonNetwork.JoinRandomRoom();
     }
 
-    string GetSuerID()
+    string GetUserID()
     {
         string userId = PlayerPrefs.GetString("USER_ID");
         if( string.IsNullOrEmpty(userId) )

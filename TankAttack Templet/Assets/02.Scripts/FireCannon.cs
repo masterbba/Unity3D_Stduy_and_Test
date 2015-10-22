@@ -19,6 +19,8 @@ public class FireCannon : MonoBehaviour
 
 	void Update ()
     {
+        if (MouseHover.instance.isUIHover) return;
+
 	    if( pv.isMine && Input.GetMouseButtonDown(0) )
         {
             Fire();

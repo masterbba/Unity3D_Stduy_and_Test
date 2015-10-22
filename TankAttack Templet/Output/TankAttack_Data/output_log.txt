@@ -2,9 +2,9 @@ Mono path[0] = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Ma
 Mono path[1] = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Mono'
 Mono config path = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Mono/etc'
 PlayerConnection initialized from E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55351
-Multi-casting "[IP] 192.168.0.13 [Port] 55351 [Flags] 2 [Guid] 295300000 [EditorId] 2827627408 [Version] 1048832 [Id] WindowsPlayer(MasterBBA-PC) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.0.13:55351]
+PlayerConnection initialized network socket : 0.0.0.0 55267
+Multi-casting "[IP] 192.168.0.13 [Port] 55267 [Flags] 2 [Guid] 1683916920 [EditorId] 3168967214 [Version] 1048832 [Id] WindowsPlayer(MasterBBA-PC) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.0.13:55267]
 Initialize engine version: 5.2.1f1 (44735ea161b3)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -29,7 +29,7 @@ Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Ph
 Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
 Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.160 seconds
+- Completed reload, in  0.172 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
@@ -40,7 +40,7 @@ UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 PhotonNetwork:ConnectToBestCloudServer(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1309)
 PhotonNetwork:ConnectUsingSettings(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1208)
-PhotonInit:Awake() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:15)
+PhotonInit:Awake() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:17)
  
 (Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs Line: 1309)
 
@@ -50,12 +50,12 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/DisplayUserId.cs Line: 13)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2640 -> priority: 1 
-  Thread -> id: 2ac0 -> priority: 1 
+  Thread -> id: 2730 -> priority: 1 
+  Thread -> id: 7a4 -> priority: 1 
 Entered Lobby!
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-PhotonInit:OnJoinedLobby() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:22)
+PhotonInit:OnJoinedLobby() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:26)
 UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
 NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
 NetworkingPeer:OnOperationResponse(OperationResponse) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1400)
@@ -64,309 +64,12 @@ ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
 ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
 PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
  
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 22)
-
-Mono path[0] = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Managed'
-Mono path[1] = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Mono'
-Mono config path = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Mono/etc'
-PlayerConnection initialized from E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55255
-Multi-casting "[IP] 192.168.0.13 [Port] 55255 [Flags] 2 [Guid] 1758130084 [EditorId] 2827627408 [Version] 1048832 [Id] WindowsPlayer(MasterBBA-PC) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.0.13:55255]
-Initialize engine version: 5.2.1f1 (44735ea161b3)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 9.0c [nvd3dumx.dll 9.18.13.5012]
-    Renderer: NVIDIA GeForce GTX 670
-    Vendor:   NVIDIA
-    VRAM:     1991 MB (via DXGI)
-    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 NULL=1 RESZ=0 SlowINTZ=0
-Begin MonoManager ReloadAssembly
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D 1.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D 1.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.047 seconds
-<RI> Initializing input.
-<RI> Input initialized.
-desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
-<RI> Initialized touch support.
-Mono path[0] = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Managed'
-Mono path[1] = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Mono'
-Mono config path = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Mono/etc'
-PlayerConnection initialized from E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55406
-Multi-casting "[IP] 192.168.0.13 [Port] 55406 [Flags] 2 [Guid] 568699223 [EditorId] 2827627408 [Version] 1048832 [Id] WindowsPlayer(MasterBBA-PC) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.0.13:55406]
-Initialize engine version: 5.2.1f1 (44735ea161b3)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 9.0c [nvd3dumx.dll 9.18.13.5012]
-    Renderer: NVIDIA GeForce GTX 670
-    Vendor:   NVIDIA
-    VRAM:     1991 MB (via DXGI)
-    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 NULL=1 RESZ=0 SlowINTZ=0
-Begin MonoManager ReloadAssembly
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D 1.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D 1.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.049 seconds
-<RI> Initializing input.
-<RI> Input initialized.
-desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
-<RI> Initialized touch support.
-Mono path[0] = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Managed'
-Mono path[1] = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Mono'
-Mono config path = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Mono/etc'
-PlayerConnection initialized from E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55053
-Multi-casting "[IP] 192.168.0.13 [Port] 55053 [Flags] 2 [Guid] 1215664306 [EditorId] 2827627408 [Version] 1048832 [Id] WindowsPlayer(MasterBBA-PC) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.0.13:55053]
-Initialize engine version: 5.2.1f1 (44735ea161b3)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 9.0c [nvd3dumx.dll 9.18.13.5012]
-    Renderer: NVIDIA GeForce GTX 670
-    Vendor:   NVIDIA
-    VRAM:     1991 MB (via DXGI)
-    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 NULL=1 RESZ=0 SlowINTZ=0
-Begin MonoManager ReloadAssembly
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D 1.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D 1.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.049 seconds
-<RI> Initializing input.
-<RI> Input initialized.
-desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
-<RI> Initialized touch support.
-Mono path[0] = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Managed'
-Mono path[1] = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Mono'
-Mono config path = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Mono/etc'
-PlayerConnection initialized from E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55043
-Multi-casting "[IP] 192.168.0.13 [Port] 55043 [Flags] 2 [Guid] 1527503687 [EditorId] 2827627408 [Version] 1048832 [Id] WindowsPlayer(MasterBBA-PC) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.0.13:55043]
-Initialize engine version: 5.2.1f1 (44735ea161b3)
-GfxDevice: creating device client; threaded=1
-Direct3D:
-    Version:  Direct3D 9.0c [nvd3dumx.dll 9.18.13.5012]
-    Renderer: NVIDIA GeForce GTX 670
-    Vendor:   NVIDIA
-    VRAM:     1991 MB (via DXGI)
-    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 NULL=1 RESZ=0 SlowINTZ=0
-Begin MonoManager ReloadAssembly
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D 1.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D 1.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D.dll (this message is harmless)
-Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.052 seconds
-<RI> Initializing input.
-<RI> Input initialized.
-desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
-<RI> Initialized touch support.
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\System.dll (this message is harmless)
-Best region found in PlayerPrefs. Connecting to: jp
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonNetwork:ConnectToBestCloudServer(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1309)
-PhotonNetwork:ConnectUsingSettings(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1208)
-PhotonInit:Awake() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:15)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs Line: 1309)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at DisplayUserId.Start () [0x0000c] in E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\DisplayUserId.cs:13 
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/DisplayUserId.cs Line: 13)
-
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2e40 -> priority: 1 
-  Thread -> id: 2e74 -> priority: 1 
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\System.dll (this message is harmless)
-Best region found in PlayerPrefs. Connecting to: jp
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonNetwork:ConnectToBestCloudServer(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1309)
-PhotonNetwork:ConnectUsingSettings(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1208)
-PhotonInit:Awake() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:15)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs Line: 1309)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at DisplayUserId.Start () [0x0000c] in E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\DisplayUserId.cs:13 
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/DisplayUserId.cs Line: 13)
-
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2e5c -> priority: 1 
-  Thread -> id: 2afc -> priority: 1 
-Entered Lobby!
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonInit:OnJoinedLobby() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:22)
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPeer:OnOperationResponse(OperationResponse) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1400)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 22)
-
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\System.dll (this message is harmless)
-Best region found in PlayerPrefs. Connecting to: jp
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonNetwork:ConnectToBestCloudServer(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1309)
-PhotonNetwork:ConnectUsingSettings(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1208)
-PhotonInit:Awake() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:15)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs Line: 1309)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at DisplayUserId.Start () [0x0000c] in E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\DisplayUserId.cs:13 
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/DisplayUserId.cs Line: 13)
-
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2cf4 -> priority: 1 
-  Thread -> id: 2cc0 -> priority: 1 
-Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\System.dll (this message is harmless)
-Best region found in PlayerPrefs. Connecting to: jp
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonNetwork:ConnectToBestCloudServer(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1309)
-PhotonNetwork:ConnectUsingSettings(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1208)
-PhotonInit:Awake() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:15)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs Line: 1309)
-
-Entered Lobby!
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonInit:OnJoinedLobby() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:22)
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPeer:OnOperationResponse(OperationResponse) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1400)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 22)
-
-NullReferenceException: Object reference not set to an instance of an object
-  at DisplayUserId.Start () [0x0000c] in E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\DisplayUserId.cs:13 
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/DisplayUserId.cs Line: 13)
-
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2524 -> priority: 1 
-  Thread -> id: 2eec -> priority: 1 
-Entered Lobby!
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonInit:OnJoinedLobby() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:22)
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPeer:OnOperationResponse(OperationResponse) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1400)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 22)
-
-Entered Lobby!
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonInit:OnJoinedLobby() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:22)
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPeer:OnOperationResponse(OperationResponse) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1400)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 22)
-
-Operation failed: OperationResponse 225: ReturnCode: 32760 (No match found). Parameters: {} Server: MasterServer
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogError(Object)
-NetworkingPeer:OnOperationResponse(OperationResponse) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1146)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 1146)
-
-No Room!
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonInit:OnPhotonRandomJoinFailed() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:40)
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPeer:OnOperationResponse(OperationResponse) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1386)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 40)
+(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 26)
 
 Enter Room
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-PhotonInit:OnJoinedRoom() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:53)
+PhotonInit:OnJoinedRoom() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:57)
 UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
 NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
 NetworkingPeer:OnEvent(EventData) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1900)
@@ -375,290 +78,44 @@ ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
 ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
 PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
  
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 53)
+(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 57)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.273757 ms
-System memory in use before: 39.0 MB.
-System memory in use after: 38.9 MB.
+UnloadTime: 10.779396 ms
+System memory in use before: 38.8 MB.
+System memory in use after: 38.7 MB.
 
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 665.
-Total: 0.597123 ms (FindLiveObjects: 0.039788 ms CreateObjectMapping: 0.030719 ms MarkObjects: 0.368630 ms  DeleteObjects: 0.157399 ms)
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 702.
+Total: 7.020869 ms (FindLiveObjects: 0.284661 ms CreateObjectMapping: 5.424659 ms MarkObjects: 0.922443 ms  DeleteObjects: 0.388227 ms)
 
-MyRoom
+UnloadTime: 0.945263 ms
+Best region found in PlayerPrefs. Connecting to: jp
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
-PhotonInit:OnReceivedRoomListUpdate() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:120)
-UnityEngine.GameObject:SendMessage(String, Object, SendMesMagyOptomo
-U)
-NetwoyEngine.r:SendMonternal_Lo(PhotonNe String, Obssage, 
-Objtyct[]) e.Debu:g:Lod(Oyject)t
-yStudy\TankAttack Templet\Astsets\e() (at Unity Networking\PlugTankAhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPee)
-UnityEng(EveentDatbj) (at ndMessady\UnityStu Odje\TankAttacksaempletions)
-Ns\Photon Unity Networking\Plugins\PhotonNetwork\sstworkingPeer.cs:1859)
-ExitGamestyStudy\TankAttPeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchInMoyiRoom
-UnityngCommanebug:Internal_Logds()a, SExitGameck Tem
-UnityEngine.oesosethotObhectr:D
-isUtotthIn:OnmiwgerkvedRoPmL
-PhinonHtahotert e:\Soud) (netyStoSrykiankiAetaucy\se:pl20tt9cet
-Tem2.ScriitsePh\Pootov U.tit12eetw
-oaityEn(an .E:seStjudon\endiess\Ste(StHaadnkr.cs:ck2)
- T
-eFilenasmep E:/i\nus)y
-/tsioyStudyeUr:SendNetworksane(PhougonNe2twhrkiogMehotonIkit.eesw[orkMaRoo0 
-E:
-S
-.udy\UnityScudngi8e9)eb
-ack ntmmplal\Logtetho3tonStn Ungty :Oesworkli
-g\Pessins\Photbug:LonNetwork\Ne
-twdrkingPeer.cs:20vedRbomL
-iestUpdaagPeer:OnEvenck(ByntData) udy\TankAttack TtyStudy\Tants\02.Scripts\PhoAssets\P.cs:12 Uni
-t
-y itytngeski.G\Pet.Phc\PhotoMesswer:(Stping, Objeeer.Cs:1859s(a
-Ex
-itGameses.geOptions)
-NetworkingPeer:SendMonoMessggi(PhotonNetworkin[])
-ExitGames.Clie]) (at E:\Study\UnityStudy\TankAttack Temnds()
-ExitGamesoton Unity Networking\Per:gins\PhotonNetwork\Networki
-ngPeonHandler:Upd
-NetworkingPeer:OnEvent(tyStudy\TankAt E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNet
+PhotonNetwork:ConnectToBestCloudServer(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1309)
+PhotonNetwork:ConnectUsingSettings(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1208)
+PhotonInit:Awake() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:17)
  
-(FiletworkingPeer.cs:1859)
-ExitGameseClient.E:/Study/UnityStheserial/TankAttack Templet/Assets/02.
-Scripts/Photoent.Ph.cs Line: Peer:D
-i
-spatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 120)
+(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs Line: 1309)
 
-oton.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 120)
-
-JoinRoom failed. Client is not on Master Server or not yet ready to call operations. Wait for callback: OnJoinedLobby or OnConnectedToMaster.
+Ignoring Connect() because app gets closed. If this is an error, check PhotonHandler.AppQuits.
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:LogError(Object)
-PhotonNetwork:JoinRoom(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1620)
-PhotonInit:OnClickRoomItem(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:141)
-<OnReceivedRoomListUpdate>c__AnonStorey6:<>m__0() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:129)
-UnityEngine.Events.InvokableCall:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:149)
-UnityEngine.Events.InvokableCallList:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:626)
-UnityEngine.Events.UnityEventBase:Invoke(Object[]) (at C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:766)
-UnityEngine.Events.UnityEvent:Invoke() (at C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:54)
-UnityEngine.UI.Button:Press() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:35)
-UnityEngine.UI.Button:OnPointerClick(PointerEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:44)
-UnityEngine.EventSystems.ExecuteEvents:Execute(IPointerClickHandler, BaseEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:52)
-UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:269)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMousePress(MouseButtonEventData) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:378)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent(Int32) (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:277)
-UnityEngine.EventSystems.StandaloneInputModule:ProcessMouseEvent() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:265)
-UnityEngine.EventSystems.StandaloneInputModule:Process() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:179)
-UnityEngine.EventSystems.EventSystem:Update() (at C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:277)
+UnityEngine.Debug:LogWarning(Object)
+NetworkingPeer:ConnectToRegionMaster(CloudRegionCode) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:409)
+PhotonNetwork:ConnectToBestCloudServer(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1310)
+PhotonNetwork:ConnectUsingSettings(String) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonNetwork.cs:1208)
+PhotonInit:Awake() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:17)
  
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs Line: 1620)
+(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/Photon Unity Networking/Plugins/PhotonNetwork/NetworkingPeer.cs Line: 409)
 
-Enter Room
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonInit:OnJoinedRoom() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:53)
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPeer:OnEvent(EventData) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1900)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component:get_gameObject ()
+  at PhotonView.ToString () [0x00000] in E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonView.cs:678 
+  at System.String.FormatHelper (System.Text.StringBuilder result, IFormatProvider provider, System.String format, System.Object[] args) [0x00168] in /Users/builduser/buildslave/mono-runtime-and-classlibs/build/mcs/class/corlib/System/String.cs:1943 
+  at System.String.Format (IFormatProvider provider, System.String format, System.Object[] args) [0x00000] in /Users/builduser/buildslave/mono-runtime-and-classlibs/build/mcs/class/corlib/System/String.cs:1873 
+  at System.String.Format (System.String format, System.Object arg0, System.Object arg1, System.Object arg2) [0x00000] in /Users/builduser/buildslave/mono-runtime-and-classlibs/build/mcs/class/corlib/System/String.cs:1863 
+  at NetworkingPeer.RegisterPhotonView (.PhotonView netView) [0x00064] in E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2904 
+  at PhotonView.Awake () [0x0000b] in E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonView.cs:257 
  
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 53)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.356260 ms
-System memory in use before: 39.8 MB.
-System memory in use after: 38.9 MB.
-
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 738.
-Total: 0.692206 ms (FindLiveObjects: 0.048858 ms CreateObjectMapping: 0.024575 ms MarkObjects: 0.460495 ms  DeleteObjects: 0.157691 ms)
-
-MyRoom
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonInit:OnReceivedRoomListUpdate() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:120)
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPeer:OnEvent(EventData) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1859)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() Mat EoomS
-tudy\UnityStudby\TankArnal_Log(mplt32, SterinPgo, n Unity )N
-UnityEngiie.ngbug:LgogsO\Pect)nNettonInit:OnonHandlerRoomListU
- 
-(Filename: E:/tudy\UnitityStudy/ankAttack Teemplet\Asssetss/2.ScripiptsPhoootInnI.ct.cs MyR
-oomyE)
-inEngen.GDabumeIbjectn:S_eondInt32age(String, Oject), SityEngine.Debtions)
-NObject)
-ngotoer:StendMeceivssage(PListUpdatworkingMessageu, ObjityStudyat E:\Stuack TemtyStt\Assets\0ttack Tets\ploetn\Assets:120ot
-on Uningine.Gamrkibngct:Sugins\Page(Streing, ONetworkingPeer.cs:2099)
-Ns)
-NerkingkingPeenEvent(EventDatage(PhotonNetudy\UnityStuagy,\OTjantkA) tack Tempule\UnAsyStts\PhankAt Unity Nmpleorkssets\Photon Unity Networking\PluginsgPeer.onNetwork\
-NetworkingPeer.cs:2o9t)o
-Nn.wPekingPse:DenEvent(EventData) (at E:\Study\UnityS
-tudy\TankAttack Tehoton.Ensets\Photon paitchIncomrkingommands()PhxitGametwork\NetwPhoton.Pher.cs:eer:Dis
-patcGhIncomingnCoPhoann.Peer
-Base:Desndler:UpdatesageAnt E:\Stuck(BynitySt
-udy\Tames.ClientT.mplPh\ton.EAetseers\Phspaon Unity Networking\Plu
-gins\PhotonNetwork\PhotonHanonPeer:D:92)
- tc
-hIncomingCommands()
-PhotonHandler:Updaae(ck(at E:\St/dssey\U02itycrudy\sTPantkAttack T Lmine:\Asse)
-
-\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 120)
-
-Enter Room
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonInit:OnJoinedRoom() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:53)
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPeer:OnEvent(EventData) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1900)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 53)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.283997 ms
-System memory in use before: 39.6 MB.
-System memory in use after: 39.5 MB.
-
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 663.
-Total: 0.566403 ms (FindLiveObjects: 0.030134 ms CreateObjectMapping: 0.020479 ms MarkObjects: 0.351954 ms  DeleteObjects: 0.162958 ms)
-
-MyRoom
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonInit:OnReceivedRoomListUpdate() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:120)
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPeer:OnEvent(EventData) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1859)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 120)M
-y
-Room
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonInit:OnReceivedRoomListUpdate() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:120)
-UnityEngine.GameObject:SendMessage(String, Object, SendMROsageOpti
-onityE
-NntgirkinDgPugeenternal_MonoMentage(PhotonN, Owbrkint)es
-snie, Objenct[]) (at E:\Stect)UPhotyStudy\:TanekAtteacoomListlet\Asset s\tPh:\Son Uy\UnityStworking\Pluginks\Photot\Assetsk\NetworiptngPeeron.cs:2099)2
-Ne)
-UnityEngine.GameObjtct:SkendMessage(StrinEventDaect, SendMessagey\Unitys)
-NetworkingPeer:SendMot\Assets\ePhotoo UnnNy Nwetworkies\Plugins\PhotonNetworE:\Study\UnityStudy\Ta859)
-EacitGames.t\Assets\PhotonPeerBase:etworkializeMessns\PhotonNetwck(Byte[]ork
-ingPeeres.Client)
-NhttonwEnetorkr:Diseer:OnEcomi(EventDatds( (a
-t E:Games.ClinityStuoton.PhotonPek TemplpatchIncomingComn Unity 
-PhotonHandlelugins\Pe() (aNetwork\udy\UnityngPeer.cas:1859)
-ExitGames.Clits\P.Photon.PeerBase:Deking\Plugins\PhgotonNallback(ByteonHan
-dxler.cs:92)i
- 
-(Filename: E:/Study/UnitySncomingCnkmtmaak dsmplet)Assets/02.Scripts/PhotonInit.cs Line: 120)
-
-
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandleR:OOM_133)
- nityEngine.Debug:I(tarnal_Log(Int32, String, ObE:\Studject)
-UniyyEngitnStedy.TDebuttLog(OTemblject)
-PhotonotitnO ReceivedRooorisiUpdate() (at E:t\ntudtwork\Photon\TankAttack Temp
- 
-(\Assetam0e:ScripSt\uhdy/Unity.cs:120Ta
-Unktyttgace.GameObetct:SendM/e2sscre(Strinh, objocnI Sen.cs Line: 120)
-
-
-NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPeer:OnEvent(EventData) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1859)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 120)
-
-Enter Room
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonInit:OnJoinedRoom() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:53)
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPeer:OnEvent(EventData) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1900)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 53)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.745094 ms
-System memory in use before: 39.3 MB.
-System memory in use after: 39.2 MB.
-
-Unloading 31 unused Assets to reduce memory usage. Loaded Objects now: 736.
-Total: 0.604729 ms (FindLiveObjects: 0.033059 ms CreateObjectMapping: 0.018431 ms MarkObjects: 0.391743 ms  DeleteObjects: 0.161202 ms)
-
-MyRoom
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonInit:OnReceivedRoomListUpdate() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:120)
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPeer:OnEvent(EventData) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1859)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 120)
-
-ROOM_133
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonInit:OnReceivedRoomListUpdate() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:120)
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPeer:OnEvent(EventData) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1859)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 120)
-
-ROOM_133
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-PhotonInit:OnReceivedRoomListUpdate() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\PhotonInit.cs:120)
-UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
-NetworkingPeer:SendMonoMessage(PhotonNetworkingMessage, Object[]) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:2099)
-NetworkingPeer:OnEvent(EventData) (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\NetworkingPeer.cs:1859)
-ExitGames.Client.Photon.PeerBase:DeserializeMessageAndCallback(Byte[])
-ExitGames.Client.Photon.EnetPeer:DispatchIncomingCommands()
-ExitGames.Client.Photon.PhotonPeer:DispatchIncomingCommands()
-PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon Unity Networking\Plugins\PhotonNetwork\PhotonHandler.cs:92)
- 
-(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 120)
+(Filename: /Users/builduser/buildslave/mono-runtime-and-classlibs/build/mcs/class/corlib/System/String.cs Line: 1943)
 
