@@ -2,10 +2,10 @@ Mono path[0] = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Ma
 Mono path[1] = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Mono'
 Mono config path = 'E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data/Mono/etc'
 PlayerConnection initialized from E:/Study/UnityStudy/TankAttack Templet/Output/TankAttack_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55267
-Multi-casting "[IP] 192.168.0.13 [Port] 55267 [Flags] 2 [Guid] 1683916920 [EditorId] 3168967214 [Version] 1048832 [Id] WindowsPlayer(MasterBBA-PC) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.0.13:55267]
-Initialize engine version: 5.2.1f1 (44735ea161b3)
+PlayerConnection initialized network socket : 0.0.0.0 55367
+Multi-casting "[IP] 192.168.0.13 [Port] 55367 [Flags] 2 [Guid] 2457929744 [EditorId] 4262760997 [Version] 1048832 [Id] WindowsPlayer(MasterBBA-PC) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.0.13:55367]
+Initialize engine version: 5.2.3f1 (f3d16a1fa2dd)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 9.0c [nvd3dumx.dll 9.18.13.5012]
@@ -28,8 +28,12 @@ Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data
 Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D 1.dll into Unity Child Domain
 Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D.dll (this message is harmless)
 Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: E:\Study\UnityStudy\TankAttack Templet\Output\TankAttack_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.172 seconds
+- Completed reload, in  0.211 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1200 59Hz; virtual: 1920x1200 at 0,0
@@ -44,14 +48,49 @@ PhotonInit:Awake() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\
  
 (Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/Photon Unity Networking/Plugins/PhotonNetwork/PhotonNetwork.cs Line: 1309)
 
+"스나이퍼"
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LoadUserInfo:Start() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\LoadUserInfo.cs:20)
+ 
+(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/LoadUserInfo.cs Line: 20)
+
+37
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LoadUserInfo:Start() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\LoadUserInfo.cs:21)
+ 
+(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/LoadUserInfo.cs Line: 21)
+
+"엄폐"
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LoadUserInfo:Start() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\LoadUserInfo.cs:25)
+ 
+(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/LoadUserInfo.cs Line: 25)
+
+"투명모드"
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LoadUserInfo:Start() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\LoadUserInfo.cs:25)
+ 
+(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/LoadUserInfo.cs Line: 25)
+
+"철갑탄"
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+LoadUserInfo:Start() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\LoadUserInfo.cs:25)
+ 
+(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/LoadUserInfo.cs Line: 25)
+
 NullReferenceException: Object reference not set to an instance of an object
   at DisplayUserId.Start () [0x0000c] in E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\DisplayUserId.cs:13 
  
 (Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/DisplayUserId.cs Line: 13)
 
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 2730 -> priority: 1 
-  Thread -> id: 7a4 -> priority: 1 
+  Thread -> id: 5fec -> priority: 1 
+  Thread -> id: 6124 -> priority: 1 
 Entered Lobby!
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
@@ -81,14 +120,22 @@ PhotonHandler:Update() (at E:\Study\UnityStudy\TankAttack Templet\Assets\Photon 
 (Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/PhotonInit.cs Line: 57)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 10.779396 ms
-System memory in use before: 38.8 MB.
-System memory in use after: 38.7 MB.
+UnloadTime: 5.042589 ms
+System memory in use before: 38.6 MB.
+System memory in use after: 38.5 MB.
 
-Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 702.
-Total: 7.020869 ms (FindLiveObjects: 0.284661 ms CreateObjectMapping: 5.424659 ms MarkObjects: 0.922443 ms  DeleteObjects: 0.388227 ms)
+Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 716.
+Total: 0.571372 ms (FindLiveObjects: 0.034229 ms CreateObjectMapping: 0.021064 ms MarkObjects: 0.368627 ms  DeleteObjects: 0.146865 ms)
 
-UnloadTime: 0.945263 ms
+[1]ads 0kill
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+GameMgr:SetConnectPlayerScore() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\GameMgr.cs:33)
+<Start>c__Iterator3:MoveNext() (at E:\Study\UnityStudy\TankAttack Templet\Assets\02.Scripts\GameMgr.cs:24)
+ 
+(Filename: E:/Study/UnityStudy/TankAttack Templet/Assets/02.Scripts/GameMgr.cs Line: 33)
+
+UnloadTime: 0.744861 ms
 Best region found in PlayerPrefs. Connecting to: jp
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)

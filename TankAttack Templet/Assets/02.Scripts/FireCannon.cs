@@ -18,8 +18,8 @@ public class FireCannon : MonoBehaviour
     }
 
 	void Update ()
-    {
-        if (MouseHover.instance.isUIHover) return;
+    {   
+        if ( MouseHover.instance && MouseHover.instance.isUIHover ) return;
 
 	    if( pv.isMine && Input.GetMouseButtonDown(0) )
         {
@@ -32,6 +32,7 @@ public class FireCannon : MonoBehaviour
     void Fire()
     {
         sfx.PlayOneShot(fireSfx, 1.0f);
-        Instantiate(cannon, firePos.position, firePos.rotation);
+        GameObject _cannon = (GameObject)Instantiate(cannon, firePos.position, firePos.rotation);
+        _cannon.GetComponent<Cannon>().playerId = pv.ownerId;
     }
 }

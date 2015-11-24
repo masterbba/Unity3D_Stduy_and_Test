@@ -8,6 +8,8 @@ public class Cannon : MonoBehaviour
     private CapsuleCollider _collider;
     private Rigidbody _rigidBody;
 
+    public int playerId = -1;
+
 	void Start ()
     {
         _collider = GetComponent<CapsuleCollider>();
